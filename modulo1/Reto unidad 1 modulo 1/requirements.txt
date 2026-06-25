@@ -1,0 +1,23 @@
+# Dependencias del Reto Integrador Unidad 1
+# Máster en Inteligencia Artificial - Dev Senior Code
+
+# Versiones pinned para reproducibilidad
+
+# Análisis de datos
+numpy==1.24.3
+pandas==2.0.3
+
+# Base de datos
+sqlalchemy==2.0.19
+
+# Notebooks
+jupyter==1.0.0
+ipykernel==6.25.1
+
+# Visualización (opcional)
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Utilidades
+python-dateutil==2.8.2
+pytz==2023.3
