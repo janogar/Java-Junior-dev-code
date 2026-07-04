@@ -3,7 +3,7 @@ package com.example.models;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cliente {
+public abstract class Cliente {
     private int id;
     private String nombre;
     private String correo;
@@ -41,6 +41,10 @@ public class Cliente {
                 System.out.println();
             }
         }
+    }
+
+    public void agregarAccion(String fecha, String descripcion) {
+        historial.add(new AccionHistorial(fecha, descripcion));
     }
 
     public void mostrarInformacion() {
