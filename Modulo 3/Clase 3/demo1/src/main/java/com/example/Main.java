@@ -1,9 +1,12 @@
 package com.example;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class Main {
@@ -15,7 +18,11 @@ public class Main {
 
        // trabajarConHashSet();
 
-        trabajarConTreeSet();
+       // trabajarConTreeSet();
+
+       // trabajarConHashMap();
+
+        trabajarConTreeMap();
     }
 
     public static void trabajarConArrayList() {
@@ -122,5 +129,62 @@ public class Main {
         notas.remove(5);
         System.out.println("Notas luego de eliminar la nota 5: ");
         System.out.println(notas);
+    }
+
+    public static void trabajarConHashMap() {
+        System.out.println("Trabajar con HashMap");
+
+        HashMap<Integer, String> estudiantes = new HashMap<>();
+
+        estudiantes.put(1001,"ana");
+        estudiantes.put(1002,"juan");
+        estudiantes.put(1003,"maria");
+        estudiantes.put(1004,"luis");
+
+        System.out.println("hashmap inicia");
+        System.out.println(estudiantes);
+
+        System.out.println("estudiante con id 1002: " + estudiantes.get(1002));
+
+        estudiantes.put(1002, "pedro");
+        System.out.println("hashmap luego de actualizar el estudiante con id 1002");
+        System.out.println(estudiantes);
+
+        System.out.println("existe la clave 1001? " + estudiantes.containsKey(1001));
+
+        System.out.println("existe el key ana? " + estudiantes.containsValue("ana"));
+
+        estudiantes.remove(1003);
+
+        System.out.println("despues de eliminar un elemento: ");
+        System.out.println(estudiantes);
+
+        System.out.println("***recorrido con for each***");
+        for (Map.Entry<Integer, String> entrada : estudiantes.entrySet()) {
+            System.out.println("clave: " + entrada.getKey() + ", valor: " + entrada.getValue());
+        }
+    }
+
+    public static void trabajarConTreeMap() {
+        System.out.println("Trabajar con TreeMap");
+
+        TreeMap<Integer, String> productos = new TreeMap<>();
+
+        productos.put(300, "mouse");
+        productos.put(100, "teclado");
+        productos.put(200, "monitor");
+
+        System.out.println("Productos ordenados por codigo:");
+        System.out.println(productos);
+
+        System.out.println("primer codigo de producto: " + productos.firstKey());
+        System.out.println("ultimo codigo de producto: " + productos.lastKey());
+
+        System.out.println("codigo menor que 250: " + productos.lowerKey(250));
+        System.out.println("codigo mayor que 250: " + productos.higherKey(250));
+
+        productos.remove(200);
+        System.out.println("Productos luego de eliminar el producto con codigo 200:");
+        System.out.println(productos);
     }
 }
