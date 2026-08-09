@@ -11,7 +11,7 @@
   "jarResourcesFolder": "C:/Users/garci/OneDrive/Documentos/GitHub/Java-Junior-dev-code/Modulo 3/clase 7/demo/src/main/frontend/generated/jar-resources",
   "themeName": "",
   "clientServiceWorkerSource": "C:\\Users\\garci\\OneDrive\\Documentos\\GitHub\\Java-Junior-dev-code\\Modulo 3\\clase 7\\demo\\target\\sw.ts",
-  "pwaEnabled": false,
-  "offlineEnabled": false,
-  "offlinePath": "'offline.html'"
+  "pwaEnabled": true,
+  "offlineEnabled": true,
+  "offlinePath": "'.'"
 }

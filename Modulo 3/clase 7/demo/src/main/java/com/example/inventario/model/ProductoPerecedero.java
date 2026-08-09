@@ -1,10 +1,10 @@
 package com.example.inventario.model;
 
-public class ProductoPedecedero extends Producto {
+public class ProductoPerecedero extends Producto {
 
     private int diasParaVencer;
 
-    public ProductoPedecedero(String categoria, String codigo, String nombre, Double precio, int stock,
+    public ProductoPerecedero(String categoria, String codigo, String nombre, Double precio, int stock,
             int diasParaVencer) {
         super(categoria, codigo, nombre, precio, stock);
         this.diasParaVencer = diasParaVencer;
