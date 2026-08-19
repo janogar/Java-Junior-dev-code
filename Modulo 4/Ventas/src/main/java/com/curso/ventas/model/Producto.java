@@ -67,6 +67,10 @@ public class Producto {
         this.descripcion = descripcion;
     }
 
+    public void reducirStock(int cantidad) {
+        this.stock -= cantidad;
+    }
+
     @Override
     public String toString() {
         return "Producto{" +
