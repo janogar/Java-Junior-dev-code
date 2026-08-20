@@ -74,5 +74,15 @@ public class ProductoService {
             return ResultadoVenta.error("No hay suficiente stock disponible para la venta. Disponible: " + producto.getStock() + ", solicitado: " + cantidad);
         }
         producto.reducirStock(cantidad);
+        double totalVenta = producto.getPrecio() * cantidad;
+        return ResultadoVenta.ok(totalVenta, producto.getStock());
+    }
+
+    public boolean estaVacio() {
+        return repository.estaVacio();
+    }
+
+    public int cantidadProductos() {
+        return repository.cantidad();
     }
 }
