@@ -82,4 +82,8 @@ public class Producto {
                 ", descripcion='" + descripcion + '\'' +
                 '}';
     }
+
+    public String getStockRestante() {
+        return "Stock restante: " + stock;
+        }
 }

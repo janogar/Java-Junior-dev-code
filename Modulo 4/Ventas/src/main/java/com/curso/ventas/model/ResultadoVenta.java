@@ -37,4 +37,9 @@ public class ResultadoVenta {
     public int getStockRestante() {
         return stockRestante;
     }
+
+    public boolean isExitoso() {
+        return exitoso;
+    }
+
 }
