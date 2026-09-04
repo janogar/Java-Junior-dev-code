@@ -2,6 +2,7 @@ package com.curso.ventas.model;
 
 public class Producto {
 
+    //test
     private int id;
     private String nombre;
     private double precio;
